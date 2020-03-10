@@ -1,0 +1,41 @@
+:root {
+  font-family: "Montserrat", sans-serif;
+  --main-text: #39bdc8;
+  --second-text: #fac0e1;
+  --main-background: #979797;
+}
+
+body {
+  margin: 0;
+  background-color: var(--main-background);
+  color: #fff;
+}
+
+.styled-content {
+  color: var(--second-text);
+  font-size: 2rem;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+.header {
+  font-size: 3rem;
+  color: var(--main-text);
+}
+
+.nav-list {
+  list-style: none;
+}
+
+.nav-list-item {
+  text-decoration: none;
+}
+
+.svg-home,
+.svg-news,
+.svg-blog,
+.svg-contact {
+  height: 10vh;
+}
