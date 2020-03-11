@@ -2,13 +2,37 @@
   font-family: "Montserrat", sans-serif;
   --main-text: #39bdc8;
   --second-text: #fac0e1;
-  --main-background: #979797;
+  --main-background: #4b4b4b;
 }
 
 body {
   margin: 0;
   background-color: var(--main-background);
   color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding: 1rem;
+  margin-bottom: 5rem;
+}
+
+.nav-bar {
+  background-color: var(--main-background);
+  position: fixed;
+  height: 5rem;
+  width: 100vw;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-around;
 }
 
 .styled-content {
@@ -37,5 +61,13 @@ body {
 .svg-news,
 .svg-blog,
 .svg-contact {
-  height: 10vh;
+  height: 5rem;
+}
+
+/* Small Screen */
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    bottom: 0;
+    width: 100vw;
+  }
 }
