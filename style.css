@@ -69,5 +69,41 @@ main {
   .nav-bar {
     bottom: 0;
     width: 100vw;
+    border-top: 2px solid #fff;
+  }
+
+  .home-text,
+  .news-text,
+  .blog-text,
+  .contact-text {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .nav-bar {
+    background-color: transparent;
+    position: static;
+    background: #fff;
+  }
+
+  svg {
+    fill: transparent;
+  }
+
+  .nav-bar li {
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+  }
+
+  .nav-bar a {
+    text-decoration: none;
+    color: var(--main-text);
+  }
+
+  .nav-list-link {
+    display: flex;
+    align-items: center;
   }
 }
